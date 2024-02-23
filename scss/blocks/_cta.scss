@@ -1,0 +1,94 @@
+.cta {
+
+    min-height: 560px;
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0.00) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%), url(/img/cta/cta-building.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 180px 0;
+    @include tablets {
+        padding: 100px 0;
+    }
+    @include phones {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 17px;
+
+    }
+
+    &__row {
+        display: flex;
+        
+        gap: 50px 30px;
+
+        @include tablets {
+            flex-wrap: wrap;
+        }
+
+
+    }
+
+    &__text {
+        max-width: 540px;
+        font-size: 16px;
+        line-height: 1.5;
+         
+        @include desktop {
+            max-width: 686px;
+        }
+
+        @include tablets {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        @include phones {
+            font-size: 13px;
+        }
+    }
+
+
+
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px 30px;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    &__input {
+        font-family: $font-main;
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.5;
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 50px;
+        min-width: 255px;
+        padding: 12px;
+        text-align: center;
+
+        &::placeholder {
+            color: #bebebe
+        }
+
+
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.23;
+        color: #E7E7E7;
+        width: 255px;
+    }
+
+    
+
+}

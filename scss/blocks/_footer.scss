@@ -1,0 +1,76 @@
+.footer {
+    background-color: $footer-bg;
+    padding-top: 72px;
+    padding-bottom: 51px;
+
+
+    @include phones {
+        text-align: center;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @include laptop {
+            grid-template-columns: 350px 350px;
+            justify-content: center;
+        }
+
+        @include tablets {
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+
+        @include phones {
+            // grid-template-columns:  repeat(auto-fit, minmax(290px, 1fr));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+
+
+        }
+    }
+
+    &__logo {
+        margin-top: -13px;
+        @include phones {
+            margin: 0 auto;
+
+        }
+    }
+
+    &__nav-list {
+        display: grid;
+        gap: 15px;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        color: $white;
+
+        @include tablets {
+            font-size: 12px;
+        }
+
+    }
+
+   
+
+}
+
+.mail {
+    color: $accent;
+    font-weight: 700;
+    
+}
+
+.social {
+    display: flex;
+    gap: 21px;
+
+    @include phones {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

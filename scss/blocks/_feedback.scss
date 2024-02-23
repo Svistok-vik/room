@@ -1,0 +1,33 @@
+.feedback {
+    background-color: $dark;
+    padding-bottom: 180px;
+
+    @include tablets {
+        padding-bottom: 100px;
+    }
+
+    @include phones {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 38px;
+    }
+
+
+}
+
+.text-2 {
+    @include desktop {
+        margin: 0 auto;
+        grid-row: 4/5;
+    }
+}
+
+.form-2 {
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}

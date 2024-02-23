@@ -1,0 +1,60 @@
+.section-map {
+    background-color: $dark;
+    padding-bottom: 180px;
+    position: relative;
+
+    @include tablets {
+        padding-bottom: 100px;
+    }
+
+    @include phones {
+        padding-bottom: 60px;
+    }
+
+    &::before {
+        position: absolute;
+        content: 'V';
+
+        top: 0;
+        right: calc(55% + 555px);
+        transform: translate(73%, -4%);
+        line-height: 1.15;
+        opacity: 0.02;
+        font-size: 400px;
+        font-family: $font-accent;
+        color: $white;
+    }
+
+    &__title {
+        margin-bottom: 88px;
+        @include tablets {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__map {
+        position: relative;
+        background-color: #626262;
+        height: 358px;
+        margin: 0 auto;
+
+        @include desktop {
+            max-width: 992px;
+        }
+
+        @include laptop {
+            max-width: 768px;
+        }
+
+        @include tablets {
+            max-width: 480px;
+        }
+
+        @include phones {
+            max-width: 350px;
+        }
+    }
+
+
+}
+
